@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAMPU ON OFF</title>
+  </head>
+  <body>
+    <img src="Assets/IMAGES/off.gif" alt="" id="lampu1" />
+    <h1>LAMPU</h1>
+    <button onclick="saklar('on')">ON</button>
+    <button onclick="saklar('off')">OFF</button>
+
+    <!--  INI SCRIPT -->
+    <script>
+      function saklar(params) {
+        console.log(params);
+
+        let lampu1 = document.getElementById("lampu1");
+
+        if (params == "on") {
+          lampu1.src = "assets/IMAGES/on.gif";
+        }
+        if (params == "off") {
+          lampu1.src = "assets/IMAGES/off.gif";
+        }
+
+        return lampu1;
+      }
+    </script>
+    <!-- SCRIPT END -->
+  </body>
+</html>
